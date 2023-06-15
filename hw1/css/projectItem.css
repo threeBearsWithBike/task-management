@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    user-select: none;
+    color: #1C1C1C;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px 16px 8px 16px;
+    border-bottom: 1px solid #1C1C1C;
+    cursor: pointer;
+}
+
+.project-item-body {
+    flex-grow: 1;
+}
+
+.project-item-title {
+    margin-bottom: 19px;
+}
+
+.project-item-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.project-author-name,
+.project-editor-name {
+    color: #8E8E8E;
+}
+
+.project-author-name {
+    margin-left: 16px;
+}
+
+.project-editor-name {
+    margin-left: auto;
+}
+
+.container:hover .project-item-menu {
+    display: block;
+}
+
+.project-item-menu {
+    display: none;
+}
+
+.btn-icon {
+    position: relative;
+    width: 42px;
+    min-height: 42px;
+    padding: 9px;
+    border-radius: 4px;
+    transform: translate(25%);
+    border: 1px solid #00000026;
+    background-color: #FFFFFF;
+}
+
+.btn-icon::after {
+    content: '\2807';
+    position: absolute;
+    top: 11px;
+    left: 17px;
+}
+
+.btn-icon:hover {
+    border: 1px solid #12131680;
+    background-color: #ECECEF;
+}
+
+.btn-icon:active {
+    border: 1px solid #1C1C1C;
+    background-color: #DCDCDE;
+}
